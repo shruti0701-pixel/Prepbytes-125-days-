@@ -1,0 +1,33 @@
+In C++, a declaration is a statement that tells the compiler about the name and type of a variable, function, or object. It provides the necessary information to the compiler to recognize and use these identifiers in the code. Declarations are typically placed at the beginning of a program or in a header file so that they can be accessed by other parts of the program.
+
+For example, the following is a declaration of a variable named count of type int:
+
+c++
+Copy code
+int count;
+This statement tells the compiler that a variable named count of type int exists in the program, but it doesn't allocate any memory for the variable.
+
+On the other hand, a definition is a statement that not only declares the existence of an identifier but also allocates memory for it. A definition can occur only once in a program, while declarations can occur multiple times.
+
+For example, the following is a definition of a variable named count of type int:
+
+c++
+Copy code
+int count = 0;
+This statement not only declares the variable but also initializes it to 0 and allocates memory for it.
+
+Similarly, a function definition provides the implementation of the function, while a function declaration only declares the function signature.
+
+c++
+Copy code
+// function declaration
+int add(int, int);
+
+// function definition
+int add(int a, int b) {
+    return a + b;
+}
+In summary, declarations provide the necessary information to the compiler about the existence of an identifier, while definitions provide the actual implementation and memory allocation for it.
+
+
+
