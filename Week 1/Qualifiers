@@ -1,0 +1,33 @@
+In C++, qualifiers are keywords used to modify the behavior of variables, functions, and classes. They are used to add additional constraints or requirements to these entities to achieve specific functionality.
+
+The four main types of qualifiers in C++ are:
+
+const: This qualifier is used to declare variables that cannot be modified after initialization. Once a variable is declared as const, its value cannot be changed throughout the program's execution. For example:
+c++
+Copy code
+const int MAX_VALUE = 100;
+volatile: This qualifier is used to declare variables whose values can change unexpectedly, such as variables that are shared between multiple threads or variables that are mapped to hardware devices. The volatile qualifier tells the compiler not to optimize the code that uses such variables. For example:
+c++
+Copy code
+volatile int sensor_value;
+mutable: This qualifier is used to declare class member variables that can be modified even if the object is declared as const. The mutable qualifier allows changes to the member variable without changing the const-ness of the object. For example:
+c++
+Copy code
+class Example {
+public:
+  mutable int counter;
+  //...
+};
+
+void some_function(const Example& ex) {
+  ex.counter++; // This is allowed because 'counter' is mutable
+}
+static: This qualifier is used to declare variables or functions that have a single instance throughout the program's execution. A static variable or function is not visible to other files in the program and cannot be accessed outside of the current scope. For example:
+c++
+Copy code
+void my_function() {
+  static int count = 0;
+  count++;
+  cout << "This function has been called " << count << " times." << endl;
+}
+These are the four main types of qualifiers in C++. They can be used in various combinations to achieve the desired functionality in a program.
