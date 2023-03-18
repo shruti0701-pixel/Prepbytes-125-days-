@@ -1,0 +1,30 @@
+Write a program to take a number as inout from the user and print the remainder when the no is divided by 10
+
+n = 456
+divide 456 by 10
+quotient: 45
+remiander: 6
+
+/ - division operator 
+% - modulo operator ( to get remiander)
+
+456 / 10 - 45
+456 % 10 - 6 
+
+a % b remainder when a is divided by b
+
+
+Code:
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x , y;
+    cin>>x;
+    y = x % 10;
+    cout << y;
+    return 0;
+}
