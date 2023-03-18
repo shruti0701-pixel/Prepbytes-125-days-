@@ -1,0 +1,16 @@
+Program to find last digit of a number and also take input from user
+
+% modulo operator(remiander comes the last digit if we divide the number by 10) 
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num , last_dig;
+    cin>>num;
+    last_dig = x % 10;
+    cout << last_dig;
+    return 0;
+}
