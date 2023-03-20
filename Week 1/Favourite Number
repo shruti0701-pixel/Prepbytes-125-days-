@@ -4,3 +4,34 @@ no. of times 5 is occuring
 56756 -> 2
 55555 -> 5
 
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int no; /*how many inputs it has to take*/
+    cin>>no;
+    while(no--)
+    {
+        int n;   // 34545//
+        cin>> n;
+        int rem , count = 0; 
+        while(n != 0)
+        {
+            rem = n % 10;   //5//
+            n = n / 10;   //3454//
+            
+            if (rem == 5)
+            {
+                count ++; 
+            }
+        }
+        cout << count <<'\n';
+        
+    }
+
+    return 0;
+}
+
