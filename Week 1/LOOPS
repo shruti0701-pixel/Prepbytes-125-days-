@@ -1,0 +1,58 @@
+ A loop is a control structure that allows a piece of code to be executed repeatedly until a specific condition is met.
+ In C++, there are three main types of loops: the "while" loop, the "for" loop, and the "do-while" loop.
+
+The "while" loop repeats a block of code as long as a particular condition is true. The "for" loop is used for iterating over a sequence of values,
+typically using a counter variable. The "do-while" loop is similar to the "while" loop, but it always executes the code block at least once, 
+even if the condition is initially false.
+
+We use loops in C++ to execute a block of code repeatedly without having to write the same code multiple times. 
+This can save a lot of time and effort when we need to perform a task that requires the same operations to be done on multiple inputs or for a specific number 
+of iterations. Loops also help in writing cleaner, more concise code and can make programs more efficient by reducing the number of instructions needed
+to execute the code.
+ 
+ ----------while & do while------------  
+ 
+ initialization  - variable is initailized
+ condition   - checking for the given condition
+ update  - variable gets updated in each iteration
+ body of the loop - code which we want to repeat
+ 
+ ---------- for loop ------------------
+ 
+ -> initiatlization happens only once which is first time when the loop runs
+ 
+ variations:
+ 
+  for (i = 2, j = 3 ;  ; ; ){
+         i++
+  }
+   
+  for ( ; ; ){
+      cout << "Shru";
+  }                          
+   == Infinite loop as condition is not given
+ -------------------------------------------------------
+   
+break & continue : to control flow of loops.
+ -> When a "break" statement is encountered inside a loop, the loop immediately terminates, and the program execution continues 
+ with the code following the loop. This is useful when we want to stop a loop once a certain condition is met or to escape an infinite loop.
+
+BREAK: terminates the loop
+    for (i = 1 ; i <= 100 ; i++){
+         if(i % 2 == 0){
+            break;
+         cout << i;
+    }
+
+-> When a "continue" statement is encountered inside a loop, the current iteration is immediately terminated, and the program execution continues 
+with the next iteration. This is useful when we want to skip a particular value or operation and continue with the next iteration.
+
+CONTINUE: skip the current iteration of a loop and move on to the next iteration.
+     for (i = 1 ; i <= 100 ; i++){
+         if(i % 2 == 0){
+            continue;
+         cout << i;
+    }
+
+In summary, "break" and "continue" are control flow statements in C++ that allow us to modify the behavior of loops by terminating the loop prematurely 
+or skipping the current iteration.
