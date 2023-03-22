@@ -1,2 +1,11 @@
 In C++, a string is a sequence of characters that is stored in memory as an array of characters. 
 Strings are useful for storing and manipulating text-based data.
+
+
+functionc in string:
+  getline()
+  push_back()
+  pop_back()
+  capacity()
+  length()
+  resize()
