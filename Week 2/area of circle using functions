@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+void areaofcir(int rad){
+    int area = 3.14 * rad * rad;
+    cout << area;
+}
+
+int main()
+{
+    int radius;
+    cin>> radius;
+    areaofcir(radius);
+    return 0;
+}
